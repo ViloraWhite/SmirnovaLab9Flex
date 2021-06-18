@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+body {
+    background: #9A1212;
+    font-family: monospace;
+    z-index: 1;
+}
+.cont {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.back {
+    background: #fff;
+}
+
+.p8vh {
+    padding-top: 8vh;
+}
+
+.pagewr {
+    min-width: none;
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#box {
+    display: block;
+    position: relative;
+    background: white;
+    height: 42vw;
+    width: 50vw;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo img {
+    width: 10vw;
+    height: auto;
+}
+
+
+#imgwr {
+    
+    height: 120%;
+    width: 120%;
+    display: flex;
+    margin-left: 190px;
+    align-items: center;
+}
+
+#imgwr img {
+    display: block;
+    width: 25vw;
+    height: auto;
+   
+    margin-bottom: 90px;
+}
+
+#contentwr {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.nav {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav li {
+    margin: 0 20px;
+}
+
+.snap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 120px;
+    height: 33px;
+    border-radius: 18px;
+    background: white;
+    text-align: center;
+}
+
+.snap a {
+    margin-top: -3px;
+    text-decoration: none;
+    color: black;
+}
+
+#menu {
+    margin-left: 8px;
+}
+
+.menuline {
+    width: 10px;
+    height: 3px;
+    background: black;
+    margin: 2px 0;
+}
+
+#title {
+    color: white;
+    text-align: right;
+    font-size: 60px;
+    margin-top: 58px;
+}
+
+#title span {
+    font-size: 90px;
+}
+
+#descr {
+    display: block;
+    width: 400px;
+    color: white;
+    font-size: 18px;
+    text-align: end;
+    margin-top: 19px;
+}
+
+.det {
+    margin-top: 15vh;
+}
+
+#leaf {
+    position: absolute;
+    bottom: 190px;
+    left: 70px;
+    width: 15vw;
+    height: auto;
+	transform: rotate(90deg);
+}
+
+#leaf1 {
+    position: absolute;
+    height: 85vh;
+    right: 10%;
+    bottom: 0;
+   
+}
+
+#leaf2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: 100vh;
+    z-index: 1;
+}
+
+#nprodwr {
+    display: flex;
+	z-index: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nprodwr h1 {
+    font-size: 120px;
+    letter-spacing: 30px;
+    margin-bottom: 15px;
+}
+
+.slleft {
+    position: relative;
+    width: 35px;
+    height: 25px;
+    transition: opacity .3s, transform .3s;
+}
+
+.slleft:hover {
+    opacity: .15;
+    transform: scale(1.5);
+}
+
+.slleft div {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-left: solid #9A1212 7px;
+    border-bottom: solid #9A1212 7px;
+    transform: rotate(45deg);
+}
+
+.slleft div:nth-child(1) {
+    left: 50%;
+}
+
+.slright {
+    position: relative;
+    width: 35px;
+    height: 25px;
+    transition: opacity .3s, transform .3s;
+    z-index: 2;
+}
+
+.slright:hover {
+    opacity: .15;
+    transform: scale(1.5);
+}
+
+.slright div {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-right: solid #9A1212 7px;
+    border-bottom: solid #9A1212 7px;
+    transform: rotate(-45deg);
+}
+
+.slright div:nth-child(1) {
+    left: 50%;
+}
+
+.margtop30 {
+    margin-top: -60px;
+}
+
+#prodwr {
+    display: flex;
+    align-items: center;
+}
+.line {
+	margin: 0 0 0 -43px;
+	width:110%;
+}
+.prod {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imgsous{
+	width: 60%; 
+	border-radius: 50px;
+	box-shadow: -25px 0px LightGray;
+	margin: 0 -50px 0 50px;
+}
+.texts {
+	font-family: monospace;
+	font-size: 27px;
+    color: #9a1212;
+    text-align: center;
+	padding: 0px !important;
+    margin:0!important;
+}
+
+.margin-r-35 {
+    margin-right: 35px;
+}
+
+.footer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #F3F3F3;
+    bottom: 0;
+}
+
+.footer-text {
+    position: relative;
+    font-size: 24px;
+    margin-left: 20px;
+    z-index: 2;
+}
+
+@media screen and (max-width: 920px) {
+    .p-last {
+        display: none;
+    }
+    #news-product__wrapper  {
+        width: 90%;
+    }
+    #prodwr {
+        margin-left: 40px;
+    }
+    #news-product__wrapper h1 {
+        font-size: 70px;
+        margin-left: 80px;
+    }
+    .leaf2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #box {
+        display: none;
+    }
+    .pagewr {
+        max-width: none;
+        display: block;
+    }
+    #contentwr {
+        width: 100%;
+        align-items: center;
+        z-index: 2;
+    }
+    #leaf1 {
+        /* display: none; */
+        z-index: 1;
+        height: 50vh;
+        width: auto;
+    }
+    #leaf2 {
+        /* display: none; */
+        z-index: 1;
+        height: 50vh;
+        width: auto;
+    }
+
+    .snap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        width: 100px;
+        height: 25px;
+        border-radius: 18px;
+        background: white;
+        text-align: center;
+    }
+    
+    .snap a {
+        margin-top: -2px;
+        text-decoration: none;
+        color: black;
+    }
+
+    #title {
+        color: white;
+        text-align: center;
+        /* font-size: 44px; */
+        margin-top: 58px;
+    }
+    
+    #title span {
+        font-size: 64px;
+    }
+    
+    #descr {
+        display: block;
+        width: 400px;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 19px;
+    }
+
+    .det {
+        height: 40px;
+        width: 200px;
+        font-size: 24px;
+    }
+    .nav li {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .p-second {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    #title {
+        color: white;
+        text-align: center;
+        font-size: 44px;
+        margin-top: 58px;
+    }
+    
+    #title span {
+        font-size: 64px;
+    }
+    
+    #descr {
+        display: block;
+        width: 300px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 19px;
+    }
+    #news-product__wrapper h1 {
+        font-size: 50px;
+        margin-left: 80px;
+        letter-spacing: 20px;
+    }
+
+    .slleft {
+        margin-right: -15px;
+    }
+
+    .slright {
+        margin-left: -45px;
+    }
+
+    .footer-text {
+        font-size: 18px;
+    }
+}
+

@@ -1,0 +1,128 @@
+body {
+    background: white;
+}
+
+.button {
+    background: #F3F3F3;
+}
+
+header {
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo img {
+    position: absolute;
+    margin-top: -20px;
+}
+
+#productwr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ptit {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.pbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    height: 450px;
+    background: #9A1212;
+    border-radius: 60px;
+    margin-top: 30px;
+}
+
+.pdes {
+    width: 582px;
+    color: white;
+    font-size: 30px;
+    margin-left: 55px;
+    text-align: right;
+    height: 180px;
+    top: 100px;
+    left: 189px;
+}
+.sous{
+	position: relative;
+    width: 300px;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 80px;
+    margin-right: -25px;
+}
+
+.sheet-3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width: 1100px) {
+    .pdes {
+        margin-left: 20px;
+    }
+    .pbox {
+        width: 700px;
+        height: 380px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .pdes {
+        margin-left: 10px;
+        font-size: 20px;
+        width: 300px;
+    }
+    .pbox {
+        width: 500px;
+        height: 300px;
+    }
+
+    .pimg {
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .ptit {
+        text-align: center;
+    }
+    .pdes {
+        margin-left: 10px;
+        font-size: 15px;
+        width: 300px;
+    }
+    .pbox {
+        width: 300px;
+        height: 200px;
+        border-radius: 30px;
+        margin-top: 60px;
+    }
+
+    .pimg {
+        width: 200px;
+        border-radius: 50px;
+    }
+
+    .sheet-3 {
+        display: none;
+    }
+
+}

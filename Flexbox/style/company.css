@@ -1,0 +1,127 @@
+.snap {
+    background: #F3F3F3;
+}
+.sel {
+     background-color: #9A1212;
+    transform: scale(1.3);
+    color: white;
+}
+
+.sel a {
+    color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ftext {
+   position: absolute;
+    right: 0;
+    font-size: 20px;
+    color: #9A1212;
+    margin-right: 30px;
+}
+.backsnap {
+    height: 60px;
+    width: 84px;
+    border-radius: 20px;
+    background: white;
+    margin-left: 40px;
+}
+.snleft {
+    position: relative;
+    width: 35px;
+    height: 25px;
+	margin-left: 20px;
+	margin-top: 10px;
+    transition: opacity .3s, transform .3s;
+}
+
+.snleft:hover {
+    opacity: .15;
+    transform: scale(1.5);
+}
+
+.snleft div {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-left: solid #9A1212 7px;
+    border-bottom: solid #9A1212 7px;
+    transform: rotate(45deg);
+}
+
+.snleft div:nth-child(1) {
+    left: 50%;
+}
+.comcont {
+    position: relative;
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.comt {
+    padding-left: 150px;
+    font-size: 32px;
+    text-align: right;
+}
+
+
+
+.comimg {
+    position: absolute;
+    left: -65px;
+    top: 0;
+    width: 20%;
+}
+
+@media screen and (max-width: 1200px) {
+    .comt {
+        font-size: 25px;
+        padding-left: 100px
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .comt {
+        font-size: 18px;
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sel {
+        margin: 0 20px;
+    }
+
+    .comimg {
+        display: none;
+    }
+
+    .comt {
+        text-align: center;
+    }
+
+    .f-text {
+        font-size: 16px;
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .logo {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+}
